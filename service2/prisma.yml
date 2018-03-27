@@ -1,0 +1,16 @@
+# the name for the service (will be part of the service's HTTP endpoint)
+service: service2
+# the cluster and stage the service is deployed to
+stage: dev
+
+# protects your Prisma API
+# secret: mysecret123
+disableAuth: true
+
+# the file path pointing to your data model
+datamodel: datamodel.graphql
+
+cluster: local
+
+#  HTTP:  http://localhost:4466/service2/dev
+#  WS:    ws://localhost:4466/service2/dev

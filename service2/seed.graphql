@@ -1,0 +1,32 @@
+mutation {
+  admin: createUser(
+    data: {
+      email: "admin@framgia.com"
+      password: "$2a$10$Y2M0AMYpV1.6n5.AeCSOAuvixOAgFg/3ns0.Ut9/w4CHFXaSadqXW" # plaintext password: "framgia"
+      name: "I'm Admin"
+      role: ADMIN
+    }
+  ) {
+    id
+  }
+  mod: createUser(
+    data: {
+      email: "mod@framgia.com"
+      password: "$2a$10$Y2M0AMYpV1.6n5.AeCSOAuvixOAgFg/3ns0.Ut9/w4CHFXaSadqXW" # plaintext password: "framgia"
+      name: "I'm Mod"
+      role: MOD
+    }
+  ) {
+    id
+  }
+  free: createUser(
+    data: {
+      email: "basic@framgia.com"
+      password: "$2a$10$Y2M0AMYpV1.6n5.AeCSOAuvixOAgFg/3ns0.Ut9/w4CHFXaSadqXW" # plaintext password: "framgia"
+      name: "I'm Basic"
+      role: USER
+    }
+  ) {
+    id
+  }
+}
