@@ -11,3 +11,8 @@ enum Role {
   MOD
   USER
 }
+
+type BitCoin {
+  id: ID! @unique
+  name: String!
+}
