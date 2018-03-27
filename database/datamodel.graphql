@@ -5,3 +5,8 @@ type Post {
   text: String!
   published: Boolean! @default(value: "false")
 }
+
+type Hehe {
+  id: ID! @unique
+  name: String!
+}
